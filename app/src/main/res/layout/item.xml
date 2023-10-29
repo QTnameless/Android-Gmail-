@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="16dp">
+
+    <!-- Left: Round Icon -->
+    <ImageView
+        android:id="@+id/iconImageView"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/round_shape" />
+
+    <!-- Middle: Sender Name and Mail Context -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_marginStart="16dp">
+
+        <!-- Sender Name -->
+        <TextView
+            android:id="@+id/senderNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="John Doe"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <!-- Mail Context -->
+        <TextView
+            android:id="@+id/mailContextTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Some random text here..."
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <!-- Right: Time and Star Icon -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Time -->
+        <TextView
+            android:id="@+id/timeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="9:30 AM"
+            android:textSize="14sp" />
+
+        <!-- Star Icon -->
+        <ImageView
+            android:id="@+id/starImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_star" />
+    </LinearLayout>
+</LinearLayout>
